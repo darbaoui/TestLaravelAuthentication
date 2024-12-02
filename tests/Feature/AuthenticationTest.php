@@ -28,7 +28,7 @@ class AuthenticationTest extends TestCase
 
         $token1 = $user1->createToken('token-name_1', ['*'])->plainTextToken;
         
-        $token2 = $user2->createToken('token-name_1', ['*'])->plainTextToken;
+        $token2 = $user2->createToken('token-name_2', ['*'])->plainTextToken;
 
         $response1 = $this->withHeaders([
             'Authorization' => 'Bearer '.$token1
